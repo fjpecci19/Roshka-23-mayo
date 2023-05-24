@@ -12,7 +12,7 @@ function Section({element}){
     return (
         <div className="Section" onClick={toggle}>{element.elem}
             <h2>
-            {showSubSection ? "": element.subelem.map(item => {return <h2>{item}</h2>})}</h2>
+            {showSubSection ? "" : element.subelem.map(item => {return <h2>{item}</h2>})}</h2>
         </div>
     )
 }
