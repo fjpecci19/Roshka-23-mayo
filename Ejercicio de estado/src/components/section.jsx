@@ -9,7 +9,9 @@ function Section({element}){
     }
     
     return (
-        <div className="Section" onClick={toggledespegable}>{element.elem}<h2 id="sub">{element.subelem}</h2></div>
+        <div className="Section" onClick={toggledespegable}>{element.elem}
+            <h2 id="sub">{element.subelem}</h2>
+        </div>
     )
 }
 
