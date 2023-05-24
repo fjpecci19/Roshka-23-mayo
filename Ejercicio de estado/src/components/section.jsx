@@ -3,14 +3,15 @@ import "./section.css"
 import { useState } from 'react'
 
 function Section({element}){
-    const toggledespegable = () => {
-        var contenido = document.getElementById("sub")
-        contenido.style.display = (contenido.style.display === "none") ? "block" : "none"
+    const [showSubSection, setSubSection] = useState(false)
+
+    const toggle = () => {
+        setSubSection(!showSubSection)
     }
     
     return (
-        <div className="Section" onClick={toggledespegable}>{element.elem}
-            <h2 id="sub">{element.subelem}</h2>
+        <div className="Section" onClick={toggle}>{element.elem}
+            <h2>{showSubSection ? "": element.subelem}</h2>
         </div>
     )
 }
