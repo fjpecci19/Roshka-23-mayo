@@ -1,31 +1,18 @@
 .Section{
-    width: 200px;
-    color: black;
-    border: 1px solid black;
-    background-color: wheat;
-    padding: 60px;
+    width: 100px;
+    color: white;
+    background-color: darkblue;
+    left: 0%;
+    padding: 70px;
     font-size: 20px;
+    border: 1px solid white;
 }
 
 .Section:hover{
     color: red;
 }
 
-.sideboard{
-    width: 321px;
-    height: 145px;
-    top: 100%;
-    left: 0%;
-    background-color: wheat;
-}
-
-.button{
+h2{
     width: 100px;
-    background-color: wheat;
-    border: wheat;
-    height: 20px;
-}
-
-.subSection{
-    
+    font-size: 15px;
 }
